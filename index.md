@@ -15,7 +15,7 @@ The app uses your camera to take photos and uses location permission to add a ma
 ## Online services
 
 - Map requests use OpenFreeMap or Esri ArcGIS, depending on the selected map style. The providers receive your IP address and tile requests that identify the requested map area.
-- Address lookup uses the Android geocoder. Depending on your device and provider, the coordinates may be processed online to return an address.
+- Address lookup uses the Android geocoder. Depending on your device and provider, the coordinates may be processed online. If Android address lookup fails or returns no address, the app can send latitude and longitude to OpenStreetMap Nominatim over HTTPS to look up an address.
 - When you use weather information, approximate coordinates are sent to Open-Meteo to retrieve local weather.
 - The free edition uses Google Mobile Ads (AdMob) for banners, interstitials and optional rewarded ads. Google may process information such as IP address, device or advertising identifiers, app interactions, and diagnostics to deliver and measure ads and prevent fraud. Where available, use the app's privacy options to manage advertising choices. See [Google's advertising privacy information](https://policies.google.com/technologies/ads).
 - Google Play Billing processes optional Remove Ads purchases. The app uses purchase status to unlock and restore the entitlement. Payment details are handled by Google Play.
